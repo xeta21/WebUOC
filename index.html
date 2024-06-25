@@ -34,7 +34,8 @@
             <div class="search-bar">
                 <div class="search-cart">
                     <!-- Barra de búsqueda -->
-                    <input type="text" placeholder="BUSCAR ..." class="search-input">
+                    <label for="search-input" class="sr-only">Buscar</label>
+                    <input type="text" id="search-input" placeholder="BUSCAR ..." class="search-input">
                     <span class="separator">|</span>
                     <!-- Botón de búsqueda -->
                     <button aria-label="Buscar"><img src="images/search-icon.png" alt="Icono de búsqueda"></button>
@@ -60,7 +61,7 @@
     <!-- Carrusel de artículos -->
     <div class="carousel-container">
         <!-- Botón para retroceder en el carrusel -->
-        <button class="carousel-btn prev-btn"><img src="images/FlechaIconIzq.jpg" alt="Flecha izquierda"></button>
+        <button class="carousel-btn prev-btn" aria-label="Retroceder carrusel"><img src="images/FlechaIconIzq.jpg" alt="Flecha izquierda"></button>
         <div class="carousel">
             <div class="carousel-items">
                 <!-- Elementos del carrusel -->
@@ -73,7 +74,7 @@
             </div>
         </div>
         <!-- Botón para avanzar en el carrusel -->
-        <button class="carousel-btn next-btn"><img src="images/FlechaIconder.jpg" alt="Flecha derecha"></button>
+        <button class="carousel-btn next-btn" aria-label="Avanzar carrusel"><img src="images/FlechaIconder.jpg" alt="Flecha derecha"></button>
     </div>
 
     <!-- Sección de cajas azules -->
