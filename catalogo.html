@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Tienda de Superhéroes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/carousel_catalogo.css">
+    <link rel="stylesheet" href="css/Catalogo.css">
+</head>
+<body>
+    <header>
+        <div class="logo-column">
+            <div class="logo">
+                <img src="images/logoho.png" alt="Logo de la tienda de superhéroes">
+            </div>
+        </div>
+        <div class="empty-column"></div>
+        <div class="navigation-search-column">
+            <nav class="menu">
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="catalogo.html" class="current-page">Comics</a></li>
+                    <li><a href="#">Merchan</a></li>
+                    <li><a href="catalogo.html">Libros</a></li>
+                    <li><a href="quienes.html">¿Quiénes somos?</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <div class="search-cart">
+                    <input type="text" placeholder="BUSCAR ..." class="search-input">
+                    <span class="separator">|</span>
+                    <button aria-label="Buscar"><img src="images/search-icon.png" alt="Icono de búsqueda"></button>
+                </div>
+                <div class="cart-icon">
+                    <button aria-label="Carrito"><img src="images/cart-icon.png" alt="Icono de carrito"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Banner -->
+    <div class="banner">
+        <div class="banner-content">
+            <h1>¡Despierta al héroe que llevas dentro!</h1>
+            <a href="catalogo.html" class="buy-button">
+                COMPRAR <img src="images/arrow-down-icon.png" alt="Icono de flecha">
+            </a>
+        </div>
+    </div>
+    <!-- Caja de texto -->
+    <div class="text-box">
+        MÁS VENDIDOS
+    </div>
+
+
+  <!-- Nuevas cajas de texto -->
+  <div class="additional-textbox">
+    Historia y Evolución de los Superhéroes
+</div>
+<div class="additional-textbox">
+    Análisis Crítico y Estudios Académicos
+</div>
+
+
+    <!-- Contenedor para los 2 carruseles -->
+    <div class="carousel-container">
+        <div class="carousel-wrapper">
+            <button class="carousel-button prev" onclick="prevSlide(1)"><img src="images/flechaiconizq.jpg" alt="Flecha izquierda"></button>
+            <div class="carousel" id="carousel1">
+                <div class="carousel-images">
+                    <img src="images/Articulo7.png" alt="Articulo 1">
+                    <img src="images/Articulo8.jpg" alt="Articulo 2">
+                    <img src="images/articulo9.jfif" alt="Articulo 3">
+                    <img src="images/articulo10.jfif" alt="Articulo 4">
+                    <img src="images/articulo11.jpg" alt="Articulo 5">
+                    <img src="images/articulo12.jfif" alt="Articulo 6">
+                </div>
+            </div>
+            <button class="carousel-button next" onclick="nextSlide(1)"><img src="images/FlechaIconder.jpg" alt="Flecha derecha"></button>
+        </div>
+        <div class="carousel-wrapper">
+            <button class="carousel-button prev" onclick="prevSlide(2)"><img src="images/flechaiconizq.jpg" alt="Flecha izquierda"></button>
+            <div class="carousel" id="carousel2">
+                <div class="carousel-images">
+                    <img src="images/Articulo1.jpg" alt="Articulo 1">
+                    <img src="images/Articulo2.jpg" alt="Articulo 2">
+                    <img src="images/Articulo3.jpg" alt="Articulo 3">
+                    <img src="images/Articulo4.jpg" alt="Articulo 4">
+                    <img src="images/Articulo5.jpg" alt="Articulo 5">
+                    <img src="images/Articulo6.jpg" alt="Articulo 6">
+                </div>
+            </div>
+            <button class="carousel-button next" onclick="nextSlide(2)"><img src="images/FlechaIconder.jpg" alt="Flecha derecha"></button>
+        </div>
+</div>
+
+
+
+  <!-- Nuevas cajas de texto -->
+  <div class="additional-textbox">
+    Guías y Enciclopedias
+</div>
+<div class="additional-textbox">
+    Literatura Inspirada en Superhéroes
+</div>
+
+
+
+<div class="carousel-container">
+        <div class="carousel-wrapper">
+            <button class="carousel-button prev" onclick="prevSlide(3)"><img src="images/flechaiconizq.jpg" alt="Flecha izquierda"></button>
+            <div class="carousel" id="carousel3">
+                <div class="carousel-images">
+                    <img src="images/articulo13.jfif" alt="Articulo 1">
+                    <img src="images/articulo14.jpg" alt="Articulo 2">
+                    <img src="images/articulo15.jpg" alt="Articulo 3">
+                    <img src="images/Articulo16.jpg" alt="Articulo 4">
+                    <img src="images/articulo17.jfif" alt="Articulo 5">
+                    <img src="images/articulo18.jpg" alt="Articulo 6">
+                </div>
+            </div>
+            <button class="carousel-button next" onclick="nextSlide(3)"><img src="images/FlechaIconder.jpg" alt="Flecha derecha"></button>
+        </div>
+        <div class="carousel-wrapper">
+            <button class="carousel-button prev" onclick="prevSlide(4)"><img src="images/flechaiconizq.jpg" alt="Flecha izquierda"></button>
+            <div class="carousel" id="carousel4">
+                <div class="carousel-images">
+                    <img src="images/articulo19.jfif" alt="Articulo 1">
+                    <img src="images/articulo20.jpg" alt="Articulo 2">
+                    <img src="images/articulo21.jfif" alt="Articulo 3">
+                    <img src="images/articulo22.jfif" alt="Articulo 4">
+                    <img src="images/articulo23.jpeg" alt="Articulo 5">
+                    <img src="images/articulo24.jfif" alt="Articulo 6">
+                </div>
+            </div>
+            <button class="carousel-button next" onclick="nextSlide(4)"><img src="images/FlechaIconder.jpg" alt="Flecha derecha"></button>
+        </div>
+    </div>
+    <script src="js/carousel_catalogo.js"></script>
+
+       <!-- Caja de texto -->
+       <div class="text-box">
+       TODOS
+    </div>
+
+
+<!-- Sección de todos los cómics -->
+<div class="comics-container">
+    <div class="comics-search">
+        <input type="text" id="search-input" placeholder="BUSCAR ..." class="search-input">
+        <button aria-label="Buscar" id="search-button"><img src="images/search-icon.png" alt="Icono de búsqueda"></button>
+    </div>
+    <div class="comics-list" id="comics-list">
+        <!-- Aquí se insertarán dinámicamente los cómics -->
+    </div>
+</div>
+
+           <script src="js/carousel_catalogo.js"></script>
+    <script src="js/Buscador.js"></script> 
+
+
+
+
+</body>
+</html>
