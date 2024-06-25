@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Tienda de Superhéroes</title>
+    <!-- Enlaces a los archivos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/Inicio.css">
+    <link rel="stylesheet" href="css/carousel_inicio.css">
+</head>
+<body>
+    <header>
+        <!-- Columna para el logo -->
+        <div class="logo-column">
+            <div class="logo">
+                <img src="images/logoho.png" alt="Logo de la tienda de superhéroes">
+            </div>
+        </div>
+        <!-- Columna vacía para separación -->
+        <div class="empty-column"></div>
+        <!-- Columna para la navegación y la barra de búsqueda -->
+        <div class="navigation-search-column">
+            <nav class="menu">
+                <ul>
+                    <!-- Enlaces de navegación -->
+                    <li><a href="index.html" class="current-page">Inicio</a></li>
+                    <li><a href="catalogo.html">Comics</a></li>
+                    <li><a href="#">Merchan</a></li>
+                    <li><a href="catalogo.html">Libros</a></li>
+                    <li><a href="quienes.html">¿Quiénes somos?</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <div class="search-cart">
+                    <!-- Barra de búsqueda -->
+                    <input type="text" placeholder="BUSCAR ..." class="search-input">
+                    <span class="separator">|</span>
+                    <!-- Botón de búsqueda -->
+                    <button aria-label="Buscar"><img src="images/search-icon.png" alt="Icono de búsqueda"></button>
+                </div>
+                <div class="cart-icon">
+                    <!-- Icono del carrito -->
+                    <button aria-label="Carrito"><img src="images/cart-icon.png" alt="Icono de carrito"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección del banner -->
+    <div class="banner">
+        <div class="banner-content">
+            <h1>¡Despierta al héroe que llevas dentro!</h1>
+            <a href="catalogo.html" class="buy-button">
+                COMPRAR <img src="images/arrow-down-icon.png" alt="Icono de flecha">
+            </a>
+        </div>
+    </div>
+
+    <!-- Carrusel de artículos -->
+    <div class="carousel-container">
+        <!-- Botón para retroceder en el carrusel -->
+        <button class="carousel-btn prev-btn"><img src="images/FlechaIconIzq.jpg" alt="Flecha izquierda"></button>
+        <div class="carousel">
+            <div class="carousel-items">
+                <!-- Elementos del carrusel -->
+                <div class="item"><img src="images/Articulo1.jpg" alt="Artículo 1"></div>
+                <div class="item"><img src="images/Articulo2.jpg" alt="Artículo 2"></div>
+                <div class="item"><img src="images/Articulo3.jpg" alt="Artículo 3"></div>
+                <div class="item"><img src="images/Articulo4.jpg" alt="Artículo 4"></div>
+                <div class="item"><img src="images/Articulo5.jpg" alt="Artículo 5"></div>
+                <div class="item"><img src="images/Articulo6.jpg" alt="Artículo 6"></div>
+            </div>
+        </div>
+        <!-- Botón para avanzar en el carrusel -->
+        <button class="carousel-btn next-btn"><img src="images/FlechaIconder.jpg" alt="Flecha derecha"></button>
+    </div>
+
+    <!-- Sección de cajas azules -->
+    <div class="blue-boxes">
+        <!-- Caja azul con enlace a ofertas -->
+        <div class="blue-box blue-box-1">
+            <a href="catalogo.html">OFERTAS</a>
+        </div>        
+        <!-- Caja azul para recomendaciones -->
+        <div class="blue-box">RECOMENDACIONES</div>
+        <!-- Caja azul con enlace a eventos -->
+        <div class="blue-box">
+            <a href="eventos.html">EVENTOS</a>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript del carrusel -->
+    <script src="js/carousel.js"></script>
+</body>
+</html>

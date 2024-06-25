@@ -1,0 +1,277 @@
+/* Carga una fuente personalizada llamada 'Gotham Light' */
+@font-face {
+    font-family: 'Gotham Light';
+    src: url('../fonts/Gotham-Light.ttf') format('truetype');
+}
+
+/* Estilo global para el cuerpo de la página */
+body {
+    font-family: 'Gotham Light', sans-serif; /* Usa la fuente 'Gotham Light' */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el padding predeterminado */
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+}
+
+/* Estilo para contenedores específicos */
+.carousel-container, .blue-boxes {
+    padding: 0 20px; /* Padding horizontal de 20px */
+}
+
+/* Estilo para los títulos de diferentes niveles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Impact', sans-serif; /* Usa la fuente 'Impact' */
+}
+
+/* Estilo para el encabezado de la página */
+header {
+    display: grid; /* Usa Grid Layout */
+    grid-template-columns: 1fr 0.1fr 4.5fr; /* Define tres columnas con proporciones específicas */
+    background-color: #f8f8f8; /* Color de fondo del encabezado */
+    padding: 10px; /* Padding de 10px */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+    border-top: 50px solid black; /* Línea negra en la parte superior del encabezado */
+    position: relative; /* Necesario para z-index */
+}
+
+/* Estilo para el menú de navegación */
+.menu {
+    padding-right: 0; /* Elimina el padding derecho */
+    border-bottom: 1px solid black; /* Línea negra en la parte inferior */
+}
+
+/* Estilo para la lista de elementos del menú */
+.menu ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Usa Flexbox */
+    flex-wrap: wrap; /* Permite que los elementos del menú se ajusten en varias líneas si es necesario */
+    padding: 0; /* Elimina el padding */
+    margin: 0; /* Elimina el margen */
+    gap: 0px; /* Sin espacio entre los elementos */
+}
+
+/* Estilo para los elementos de la lista del menú */
+.menu li {
+    padding-right: 145px; /* Espacio entre los elementos del menú */
+}
+
+/* Estilo para los enlaces del menú */
+.menu li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #333; /* Color del texto */
+    font-size: 2.2em; /* Tamaño de fuente grande */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Estilo para los enlaces del menú al pasar el ratón por encima */
+.menu li a:hover {
+    color: #007bff; /* Cambiar color al pasar el ratón por encima */
+}
+
+/* Estilo para el enlace '¿Quiénes somos?' */
+.menu li a.current-page {
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo para la columna del logo */
+.logo-column {
+    display: flex; /* Usa Flexbox */
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    position: relative; /* Necesario para ajustar la posición del logo */
+    z-index: 1; /* Asegura que el logo esté por encima de otros elementos */
+}
+
+/* Estilo para la imagen del logo */
+.logo img {
+    max-height: 150px; /* Altura máxima del logo */
+    position: relative;
+    top: -40px; /* Ajusta el valor para que el logo sobrepase la línea negra */
+    z-index: 2; /* Asegura que el logo esté por encima de la línea negra */
+}
+
+/* Estilo para la columna de navegación y búsqueda */
+.navigation-search-column {
+    display: flex; /* Usa Flexbox */
+    flex-direction: column; /* Dispone los elementos en columna */
+}
+
+/* Estilo para la barra de búsqueda */
+.search-bar {
+    padding-left: 0; /* Elimina el padding izquierdo */
+    margin-top: 5px; /* Margen superior de 5px */
+    display: flex; /* Usa Flexbox */
+    align-items: center; /* Alinea los elementos en el centro verticalmente */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+}
+
+/* Estilo para el contenedor de búsqueda y carrito */
+.search-cart {
+    display: flex; /* Usa Flexbox */
+    align-items: center; /* Alinea los elementos en el centro verticalmente */
+    flex-grow: 1; /* Permite que el contenedor crezca según sea necesario */
+}
+
+/* Estilo para el campo de entrada de búsqueda */
+.search-cart input {
+    padding: 0; /* Elimina el padding */
+    font-size: 30px; /* Tamaño de fuente grande */
+    border: none; /* Elimina el borde */
+    outline: none; /* Elimina el contorno */
+    flex-grow: 1; /* Permite que el campo de búsqueda crezca según sea necesario */
+    letter-spacing: 0.2em; /* Espaciado entre letras */
+}
+
+/* Estilo para el separador entre búsqueda y carrito */
+.separator {
+    margin: 0 10px; /* Espacio entre la barra de búsqueda y el carrito */
+    padding-right: 0; /* Elimina el padding derecho */
+}
+
+/* Estilo para el icono del carrito */
+.cart-icon {
+    margin-left: 250px; /* Espacio a la izquierda del carrito */
+    margin-right: 250px; /* Espacio a la derecha del carrito */
+}
+
+/* Estilo para el banner */
+.banner {
+    background-image: url("../images/SuperHeroBanner.jpg"); /* Ruta a la imagen de fondo del banner */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    height: 600px; /* Altura del banner */
+    display: flex; /* Usa Flexbox */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    position: relative;
+    margin-top: -55px; /* Sube el banner hacia arriba */
+}
+
+/* Añadir margen inferior al banner para separar de la caja azul */
+.banner + .full-screen-box {
+    margin-top: 20px; /* Espacio superior de 20px */
+}
+
+/* Estilo para el contenido del banner */
+.banner-content {
+    background-color: rgba(87, 196, 185, 0.6); /* Fondo azul con opacidad del 60% */
+    padding: 40px; /* Padding de 40px */
+    text-align: center; /* Texto centrado */
+    border-radius: 10px; /* Bordes redondeados de 10px */
+}
+
+/* Estilo para los títulos dentro del banner */
+.banner-content h1 {
+    color: black; /* Texto en negro */
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+    font-weight: 400; /* Peso de fuente normal */
+}
+
+/* Estilo para el botón de compra */
+.buy-button {
+    background-color: rgba(238, 91, 91, 0.6); /* Fondo rojo con opacidad del 60% */
+    color: white; /* Texto en blanco */
+    border: none; /* Sin borde */
+    font-size: 1.5em; /* Tamaño de fuente */
+    display: inline-block; /* Elemento en línea */
+    cursor: pointer; /* Cursor de mano al pasar por encima */
+    border-radius: 5px; /* Bordes redondeados de 5px */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    text-decoration: none; /* Elimina el subrayado */
+    padding: 10px 20px; /* Padding de 10px vertical y 20px horizontal */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+/* Estilo para el botón de compra al hacer clic */
+.buy-button:active {
+    opacity: 1; /* Opacidad completa */
+}
+
+/* Estilo para la imagen dentro del botón de compra */
+.buy-button img {
+    margin-left: 10px; /* Margen izquierdo de 10px */
+    width: 20px; /* Ancho de 20px */
+    height: 20px; /* Altura de 20px */
+}
+
+/* Estilo para el botón de compra al pasar el ratón por encima */
+.buy-button:hover {
+    background-color: rgba(238, 91, 91, 0.8); /* Fondo rojo con opacidad del 80% */
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    /* Ajustes en el encabezado */
+    header {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+        align-items: center; /* Alinea los elementos al centro */
+    }
+
+    /* Ajustes en la columna del logo */
+    .logo-column {
+        justify-content: center; /* Centra el logo */
+    }
+
+    /* Ajustes en la barra de búsqueda */
+    .search-bar {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+    }
+
+    /* Ajustes en el contenedor de búsqueda y carrito */
+    .search-cart {
+        width: 100%; /* El campo de búsqueda toma todo el ancho */
+        margin-bottom: 10px; /* Margen inferior de 10px */
+    }
+
+    /* Ajustes en el campo de entrada de búsqueda */
+    .search-cart input {
+        font-size: 20px; /* Tamaño de fuente menor */
+    }
+
+    /* Ajustes en el icono del carrito */
+    .cart-icon {
+        margin-left: 0; /* Elimina el margen izquierdo */
+        margin-right: 0; /* Elimina el margen derecho */
+        align-self: flex-end; /* Alinea el icono del carrito al final */
+    }
+
+    /* Ajustes en el menú de navegación */
+    .menu ul {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+    }
+
+    /* Ajustes en los enlaces del menú */
+    .menu li a {
+        font-size: 1.5em; /* Tamaño de fuente menor */
+        margin-right: 0; /* Elimina el margen derecho */
+        margin-bottom: 10px; /* Margen inferior de 10px */
+    }
+
+    /* Ajustes en el último elemento de la lista del menú */
+    .menu li:last-child {
+        margin-bottom: 0; /* Elimina el margen inferior */
+    }
+
+    /* Ajustes en el banner */
+    .banner {
+        height: 400px; /* Altura del banner menor */
+    }
+
+    /* Ajustes en los títulos dentro del banner */
+    .banner-content h1 {
+        font-size: 1.8em; /* Tamaño de fuente menor */
+    }
+
+    /* Ajustes en el botón de compra */
+    .buy-button {
+        font-size: 1em; /* Tamaño de fuente menor */
+        padding: 8px 16px; /* Padding menor */
+    }
+
+    /* Ajustes en la imagen dentro del botón de compra */
+    .buy-button img {
+        width: 16px; /* Ancho menor */
+        height: 16px; /* Altura menor */
+    }
+}

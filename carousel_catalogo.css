@@ -1,0 +1,47 @@
+/* Contenedor del carrusel con un diseño de grid para organizar dos carruseles uno al lado del otro */
+.carousel-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Define dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre los elementos del grid */
+    margin: 20px; /* Espacio alrededor del contenedor del carrusel */
+}
+
+/* Contenedor individual de cada carrusel, posicionado relativo para botones de navegación */
+.carousel-wrapper {
+    position: relative; /* Necesario para posicionar los botones de navegación */
+    width: 100%; /* Ancho completo del contenedor del carrusel */
+    display: flex; /* Flexbox para alinear los elementos hijos */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    justify-content: space-between; /* Espacio entre los botones y el carrusel */
+}
+
+/* Área visible del carrusel con overflow hidden para ocultar imágenes desbordadas */
+.carousel {
+    width: 70%; /* Ancho del carrusel reducido al 70% del contenedor original */
+    overflow: hidden; /* Oculta las imágenes que se desbordan del contenedor del carrusel */
+}
+
+/* Contenedor de las imágenes del carrusel con flexbox para alineación horizontal */
+.carousel-images {
+    display: flex; /* Flexbox para alinear las imágenes horizontalmente */
+    transition: transform 0.5s ease-in-out; /* Transición suave para el desplazamiento del carrusel */
+}
+
+/* Estilos generales para los botones del carrusel */
+.carousel-button {
+    background-color: transparent; /* Fondo transparente para los botones */
+    border: none; /* Sin borde para los botones */
+    cursor: pointer; /* Cursor de puntero para indicar que son interactivos */
+}
+
+/* Tamaño de las flechas de navegación del carrusel */
+.carousel-button img {
+    width: 30px; /* Ancho de las flechas de navegación */
+    height: 30px; /* Alto de las flechas de navegación */
+}
+
+/* Estilos para las imágenes del carrusel */
+.carousel-images img {
+    width: 25%; /* Cada imagen ocupa el 25% del ancho del contenedor de imágenes */
+    margin-right: 10px; /* Espacio entre cada imagen */
+}
