@@ -1,9 +1,0 @@
-/* Estilo para la caja azul */
-.full-screen-box {
-    background-color: rgba(87, 196, 185, 0.6); /* Fondo azul con opacidad del 60% */
-    color: black; /* Texto en negro */
-    padding: 40px;
-    text-align: center;
-    width: 100%; /* Asegura que la caja tome todo el ancho */
-    box-sizing: border-box; /* Incluye el padding en el ancho total */
-}
