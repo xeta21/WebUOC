@@ -1,25 +1,3 @@
-/* Estilo para el input de búsqueda */
-.search-input {
-    padding: 10px; /* Relleno interno de 10px */
-    border: 1px solid #ccc; /* Borde gris claro de 1px */
-    border-radius: 5px 0 0 5px; /* Bordes redondeados a la izquierda */
-    outline: none; /* Sin contorno al hacer clic */
-    font-size: 16px; /* Tamaño de fuente de 16px */
-    flex: 1; /* Flexibilidad para ocupar el espacio disponible */
-    max-width: 500px; /* Ancho máximo ajustable */
-}
-
-/* Estilo para el botón de búsqueda en el contenedor */
-.search-cart button {
-    margin-left: 20px; /* Espacio grande entre el input y el botón */
-}
-
-/* Estilo para la imagen del botón de búsqueda */
-.search-cart button img {
-    width: 20px; /* Ancho de la imagen */
-    height: 20px; /* Altura de la imagen */
-}
-
 /* Estilo para las cajas de texto */
 .text-box {
     background-color: #EE5B5B; /* Color de fondo rojo */
