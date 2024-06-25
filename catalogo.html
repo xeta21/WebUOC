@@ -30,12 +30,12 @@
                     <li><a href="quienes.html">¿Quiénes somos?</a></li>
                 </ul>
             </nav>
-                       <div class="search-bar">
+            <div class="search-bar">
                 <div class="search-cart">
                     <!-- Barra de búsqueda -->
-                    <input type="text" id="search-input2" placeholder="BUSCAR ..." class="search-input">
+                    <input type="text" placeholder="BUSCAR ..." class="search-input">
                     <span class="separator">|</span>
-                    <button><img src="images/search-icon.png" alt="Icono de búsqueda"></button>
+                    <button aria-label="Buscar"><img src="images/search-icon.png" alt="Icono de búsqueda"></button>
                 </div>
                 <!-- Icono del carrito -->
                 <div class="cart-icon">
@@ -72,7 +72,7 @@
     <!-- Contenedor para los carruseles de productos -->
     <div class="carousel-container">
         <div class="carousel-wrapper">
-            <button class="carousel-button prev" onclick="prevSlide(1)"><img src="images/FlechaIconIzq.jpg" alt="Flecha izquierda"></button>
+            <button class="carousel-button prev" onclick="prevSlide(1)"><img src="images/flechaiconizq.jpg" alt="Flecha izquierda"></button>
             <div class="carousel" id="carousel1">
                 <div class="carousel-images">
                     <!-- Imágenes del primer carrusel -->
@@ -87,7 +87,7 @@
             <button class="carousel-button next" onclick="nextSlide(1)"><img src="images/FlechaIconder.jpg" alt="Flecha derecha"></button>
         </div>
         <div class="carousel-wrapper">
-            <button class="carousel-button prev" onclick="prevSlide(2)"><img src="images/FlechaIconIzq.jpg" alt="Flecha izquierda"></button>
+            <button class="carousel-button prev" onclick="prevSlide(2)"><img src="images/flechaiconizq.jpg" alt="Flecha izquierda"></button>
             <div class="carousel" id="carousel2">
                 <div class="carousel-images">
                     <!-- Imágenes del segundo carrusel -->
@@ -114,7 +114,7 @@
     <!-- Contenedor para más carruseles de productos -->
     <div class="carousel-container">
         <div class="carousel-wrapper">
-            <button class="carousel-button prev" onclick="prevSlide(3)"><img src="images/FlechaIconIzq.jpg" alt="Flecha izquierda"></button>
+            <button class="carousel-button prev" onclick="prevSlide(3)"><img src="images/flechaiconizq.jpg" alt="Flecha izquierda"></button>
             <div class="carousel" id="carousel3">
                 <div class="carousel-images">
                     <!-- Imágenes del tercer carrusel -->
@@ -129,7 +129,7 @@
             <button class="carousel-button next" onclick="nextSlide(3)"><img src="images/FlechaIconder.jpg" alt="Flecha derecha"></button>
         </div>
         <div class="carousel-wrapper">
-            <button class="carousel-button prev" onclick="prevSlide(4)"><img src="images/FlechaIconIzq.jpg" alt="Flecha izquierda"></button>
+            <button class="carousel-button prev" onclick="prevSlide(4)"><img src="images/flechaiconizq.jpg" alt="Flecha izquierda"></button>
             <div class="carousel" id="carousel4">
                 <div class="carousel-images">
                     <!-- Imágenes del cuarto carrusel -->
@@ -148,28 +148,21 @@
     <!-- Script para manejar el carrusel -->
     <script src="js/carousel_catalogo.js"></script>
 
-
-
-           <!-- Caja de texto -->
-       <div class="text-box">
-       TODOS
+    <!-- Caja de texto para sección final -->
+    <div class="text-box">
+        TODOS
     </div>
 
-
-<!-- Sección de todos los cómics -->
-<div class="comics-container">
-    <div class="comics-search">
-        <input type="text" id="search-input" placeholder="BUSCAR ..." class="search-input">
-        <button aria-label="Buscar" id="search-button"><img src="images/search-icon.png" alt="Icono de búsqueda"></button>
+    <!-- Sección de todos los cómics con barra de búsqueda -->
+    <div class="comics-container">
+        <div class="comics-search">
+            <input type="text" id="search-input" placeholder="BUSCAR ..." class="search-input">
+            <button aria-label="Buscar" id="search-button"><img src="images/search-icon.png" alt="Icono de búsqueda"></button>
+        </div>
+        <div class="comics-list" id="comics-list">
+            <!-- Aquí se insertarán dinámicamente los cómics -->
+        </div>
     </div>
-    <div class="comics-list" id="comics-list">
-        <!-- Aquí se insertarán dinámicamente los cómics -->
-    </div>
-</div>
-
-           <script src="js/carousel_catalogo.js"></script>
-    <script src="js/Buscador.js"></script> 
-
 
     <!-- Scripts adicionales para funcionalidad de búsqueda -->
     <script src="js/carousel_catalogo.js"></script>
