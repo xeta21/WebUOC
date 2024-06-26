@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Obtener el elemento donde se mostrará la lista de cómics
 const comicsList = document.getElementById('comics-list');
 // Obtener el campo de entrada de búsqueda por nombre de cómic
-const searchInput = document.getElementById('search-input');
+const searchInput = document.getElementById('search-input2');
 // Obtener el botón de búsqueda
 const searchButton = document.getElementById('search-button');
 
